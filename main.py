@@ -40,6 +40,7 @@ def linkedin_login_with_proxy_rotation():
 
             browser = p.chromium.launch(
                 headless=False,
+                proxy=proxy_settings
             )
             page = browser.new_page()
 
